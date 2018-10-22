@@ -26,7 +26,7 @@ public class VoucherTests {
 	
 	
 	@Test(dataProvider="getVoucherData")
-	public void test1(String uuid,String uuidValue) throws IOException {
+	public void getBasicUserInfoTest(String uuid,String uuidValue) throws IOException {
 		String baseUrl = gutil.getProperty("getBasicUserInfo");
 		System.out.println(baseUrl);
 		Response res = RestAssuredUtils.getRequestWithParameters(baseUrl,"application/json",uuid,uuidValue);
