@@ -16,7 +16,7 @@ public class GeneralUtils {
 		String result=null;
 		try {
 			prop = new Properties();
-			fr = new FileReader("E:\\Eclipse-Photon\\mmt\\config.properties");
+			fr = new FileReader("C:\\Users\\mmt7543\\git\\ContinuousIntegration\\mmt\\config.properties");
 			prop.load(fr);
 			result = prop.getProperty(property);
 		}catch(Exception e) {

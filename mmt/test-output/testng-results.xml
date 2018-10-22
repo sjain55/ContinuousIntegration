@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2074" started-at="2018-10-19T13:50:20Z" finished-at="2018-10-19T13:50:22Z">
+  <suite name="Suite" duration-ms="3881" started-at="2018-10-22T06:46:57Z" finished-at="2018-10-22T06:47:01Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="2074" started-at="2018-10-19T13:50:20Z" finished-at="2018-10-19T13:50:22Z">
+    <test name="Test" duration-ms="3881" started-at="2018-10-22T06:46:57Z" finished-at="2018-10-22T06:47:01Z">
       <class name="org.mmt.tests.VoucherTests">
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:org.mmt.tests.VoucherTests@4cc0edeb]" name="test1" duration-ms="2026" started-at="2018-10-19T13:50:20Z" data-provider="getVoucherData" finished-at="2018-10-19T13:50:22Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:org.mmt.tests.VoucherTests@4cc0edeb]" name="test1" duration-ms="3779" started-at="2018-10-22T06:46:57Z" data-provider="getVoucherData" finished-at="2018-10-22T06:47:01Z">
           <params>
             <param index="0">
               <value>
