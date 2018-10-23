@@ -5,7 +5,7 @@
     <classes>
       <class name="org.mmt.tests.VoucherTests">
         <methods>
-          <include name="test1" invocation-numbers="0"/>
+          <include name="getBasicUserInfoTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- org.mmt.tests.VoucherTests -->
     </classes>
