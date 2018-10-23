@@ -34,9 +34,6 @@ public class VoucherTests {
 		Response res = RestAssuredUtils.getRequestWithParameters(baseUrl,"application/json",uuid,uuidValue);
 		System.out.println(res.getTime());
 		System.out.println(res.getStatusCode());
-		ResultSet row = gutil.executeSql("SELECT is_active FROM PRIMESERVICE.user_info where user_uuid='UF5HN6KJOGH'");
-		System.out.println("is_active status from DB:"+row.getInt(0));
-	
 	}
 
 
