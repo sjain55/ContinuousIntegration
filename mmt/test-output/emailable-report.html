@@ -9,10 +9,45 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">3,881</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,984</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.mmt.tests.VoucherTests</td><td><a href="#m0">test1</a></td><td rowspan="1">1540190817422</td><td rowspan="1">3779</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">prime_service.PreCancelValidationTests</td><td><a href="#m0">oneFltOneHtlCancellation</a></td><td rowspan="1">1540367688886</td><td rowspan="1">408</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">loyalty_webservice.VoucherTests</td><td><a href="#m1">getUserActivationStatus</a></td><td rowspan="1">1540367686348</td><td rowspan="1">2527</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">org.mmt.tests.VoucherTests#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>userUUID</td><td>UF5HN6KJOGH</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">prime_service.PreCancelValidationTests#oneFltOneHtlCancellation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">javax.xml.bind.MarshalException
+ - with linked exception:
+[com.sun.istack.internal.SAXException2: unable to marshal type &quot;org.json.JSONObject&quot; as an element because it is missing an @XmlRootElement annotation]
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.write(MarshallerImpl.java:311)
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.marshal(MarshallerImpl.java:236)
+	at javax.xml.bind.helpers.AbstractMarshallerImpl.marshal(AbstractMarshallerImpl.java:116)
+	at javax.xml.bind.Marshaller$marshal$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
+	at io.restassured.internal.mapping.JaxbMapper.serialize(JaxbMapper.groovy:52)
+	at io.restassured.mapper.ObjectMapper$serialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.mapping.ObjectMapping.serializeWithJaxb(ObjectMapping.groovy:188)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:151)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
+	at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:125)
+	at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:832)
+	at org.mmt.utils.RestAssuredUtils.postRequest(RestAssuredUtils.java:12)
+	at prime_service.PreCancelValidationTests.oneFltOneHtlCancellation(PreCancelValidationTests.java:26)
+Caused by: com.sun.istack.internal.SAXException2: unable to marshal type &quot;org.json.JSONObject&quot; as an element because it is missing an @XmlRootElement annotation
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.reportError(XMLSerializer.java:234)
+	at com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl.serializeRoot(ClassBeanInfoImpl.java:323)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsRoot(XMLSerializer.java:479)
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.write(MarshallerImpl.java:308)
+	... 54 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">loyalty_webservice.VoucherTests#getUserActivationStatus</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>userUUID</td><td>UF5HN6KJOGH</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

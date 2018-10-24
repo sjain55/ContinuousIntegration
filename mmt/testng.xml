@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="org.mmt.tests.VoucherTests"/>
+      <class name="loyalty_webservice.VoucherTests"/>
+      <class name="prime_service.PreCancelValidationTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

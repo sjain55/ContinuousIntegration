@@ -1,0 +1,23 @@
+{
+  "booking": {
+    "booker": {
+      "profileType": "PERSONAL",
+      "uuid": "string"
+    },
+    "bookingId": "string",
+    "flights": {
+      "sectors": [
+        {
+          "departureTime": "2018-10-23T12:25:28.050Z",
+          "id": "string",
+          "numPaxToBeCancelled": 0
+        }
+      ]
+    },
+    "hotels": {
+      "checkInTime": "2018-10-23T12:25:28.050Z"
+    },
+    "lob": "FLT"
+  },
+  "pageType": "DETAILS"
+}

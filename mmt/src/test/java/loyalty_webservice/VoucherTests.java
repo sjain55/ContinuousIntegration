@@ -1,4 +1,4 @@
-package org.mmt.tests;
+package loyalty_webservice;
 
 import java.io.IOException;
 
@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import io.restassured.response.Response;
 
 public class VoucherTests {
-	RestAssuredUtils ru;
 	GeneralUtils gutil; 
 	
 	public VoucherTests() {
@@ -26,7 +25,7 @@ public class VoucherTests {
 	
 	
 	@Test(dataProvider="getVoucherData")
-	public void getBasicUserInfoTest(String uuid,String uuidValue) throws IOException {
+	public void getUserActivationStatus(String uuid,String uuidValue) throws IOException {
 		String baseUrl = gutil.getProperty("getUserActivationStatus");
 		System.out.println(baseUrl);
 		Response res = RestAssuredUtils.getRequestWithParameters(baseUrl,"application/json",uuid,uuidValue);
