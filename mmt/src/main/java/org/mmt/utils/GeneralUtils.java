@@ -38,7 +38,7 @@ public class GeneralUtils {
 		Statement stmt=null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");	
-			Connection conn	= DriverManager.getConnection("jdbc:mysql://localhost:3306/primeserviceqa","primeserviceqa","primeserviceqa");
+			Connection conn	= DriverManager.getConnection("jdbc:mysql://172.16.43.123:3306/PRIMESERVICEQA","primeserviceqa","primeserviceqa");
 			stmt =  conn.createStatement();
 		}catch(Exception e){
 			e.printStackTrace();
@@ -49,7 +49,7 @@ public class GeneralUtils {
 	/**
 	 * <pre>to return sql resultset
 	 */
-	private ResultSet executeSql(String query) {
+	public ResultSet executeSql(String query) {
 		ResultSet resultset = null;
 		try {
 			resultset= this.connectToMysql().executeQuery(query);
